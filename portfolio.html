@@ -6,6 +6,7 @@
         <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel ="stylesheet" type="text/css" href="css/lightbox.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
     </head>
     <body>
@@ -28,7 +29,7 @@
                         <li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                         <li class="active"><a href="portfolio.html"><span class="glyphicon glyphicon-camera"></span> Portfolio</a></li>
                         <li class=""><a href="#"><span class="glyphicon glyphicon-user"></span> Om</a></li>
-                        <li class=""><a href="#"><span class="glyphicon glyphicon-envelope"></span> Kontakta</a></li>
+                        <li class=""><a href="#kontaktbox"><kontaktfade><span class="glyphicon glyphicon-envelope"></span> Kontakta</kontaktfade></a></li>
                     </ul>
                 </div>
             </div>
@@ -163,11 +164,30 @@
                         </a>
                     </div>
                 </div>
-
-
-
-
-
+            </div>
+        </div>
+        <div class="container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12" id="kontaktbox">
+            <div class="jumbotron ">
+                <div class="row">
+                    <form action="" method="">
+                        <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email"/>
+                        </div>
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <label for="Namn">Namn</label>
+                            <input type="text" class="form-control" id="text"/>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-5 col-xs-12">
+                            <label for="Meddelande">Meddelande</label>
+                            <textarea class="form-control" rows="5" id="meddelande"></textarea>
+                        </div>
+                        <div class="form-group col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                            <label for="Submit">Submit</label>
+                            <input type="submit" class="form-control" id="submit"/>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -176,10 +196,9 @@
         </div>
 
 
-
+        <script src="js/kontaktboxfadein.js"></script>
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="js/lightbox.min.js"></script>
-       
     </body>
 </html>

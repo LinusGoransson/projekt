@@ -3,7 +3,7 @@
 }
 body{
     background-color:#f4f4f4;
-    font-family: serif;
+    font-family: Calibri;
 }
 .thumbnail:hover{
     transform:scale(0.9);
@@ -20,3 +20,9 @@ body{
 #copyright{
     color: #F4F4F4;
 }
+
+#kontaktbox{
+    display: none;
+}
+    
+
