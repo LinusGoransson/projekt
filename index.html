@@ -26,15 +26,83 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                         <li class=""><a href="portfolio.html"><span class="glyphicon glyphicon-camera"></span> Portfolio</a></li>  
-                        <li class=""><a href="#"><span class="glyphicon glyphicon-user"></span> Om</a></li>
-                        <li class=""><a href="#"><span class="glyphicon glyphicon-envelope"></span> Kontakta</a></li>
+                        <li class=""><a class="" href="#about"><span class="glyphicon glyphicon-user"></span> Om</a></li>
+                        <li><a class="page-scroll" href="#test"><span class="glyphicon glyphicon-envelope"></span> Kontakta</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-      
+        <div class="container-fluid ">
+            <div class="row">
+                <img src="img/nylogga2.png" class="center-block"/>     
+            </div>    
+        </div>
         
+
+            <div id="myCarousel" class="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/carousel1.png" alt="carousel1" class="img-responsive"/>
+                    </div>
+                    <div class="item">
+                        <img src="img/carousel5.png" alt="carousel2" class="img-responsive"/>
+                    </div>
+                    <div class="item">
+                        <img src="img/carousel3.png" alt="carousel3" class="img-responsive"/>
+                    </div>
+                    <div class="item">
+                        <img src="img/carousel4.png" alt="carousel3" class="img-responsive"/>
+                    </div>
+                    <div class="item">
+                        <img src="img/carousel2.png" alt="carousel3" class="img-responsive"/>
+                    </div>
+                </div>
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </div>
+       
+
+
+
+        <div class="container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12" id="kontakta">
+            <div class="jumbotron ">
+                <h1>Kontakta</h1>
+                <div class="row">
+                    <form action="" method="">
+                        <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email"/>
+                        </div>
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <label for="Namn">Namn</label>
+                            <input type="text" class="form-control" id="text"/>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-5 col-sm-5 col-xs-12">
+                            <label for="Meddelande">Meddelande</label>
+                            <textarea class="form-control" rows="5" id="meddelande"></textarea>
+                        </div>
+                        <div class="form-group col-lg-1 col-md-2 col-sm-2 col-xs-4">
+                            <label for="Submit">Submit</label>
+                            <input type="submit" class="form-control" id="submit"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
 
         <div class="footer">
             <p class="text-center" id="copyright">Copyright &copy; Linus Göransson</p>
@@ -44,7 +112,6 @@
 
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/scrolling-nav.js"></script>
-        <script src="js/kontaktboxfadein.js"></script>
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
