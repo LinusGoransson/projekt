@@ -43,12 +43,12 @@
     alwaysShowNavOnTouchDevices: false,
     fadeDuration: 500,
     fitImagesInViewport: true,
-    // maxWidth: 800,
-    // maxHeight: 600,
+    maxWidth: 800,
+    maxHeight: 800,
     positionFromTop: 50,
     resizeDuration: 700,
     showImageNumberLabel: true,
-    wrapAround: false,
+    wrapAround: true,
     disableScrolling: false
   };
 
