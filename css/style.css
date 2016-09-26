@@ -8,6 +8,14 @@ body{
 .thumbnail:hover{
     transform:scale(0.9);
 }
+.imghover{
+    -webkit-transition:all 0.6s ease; 
+    padding-left: 30px;
+    
+}
+.imghover:hover{
+    transform:scale(0.9);
+}
 .footer{
     position: fixed;
     bottom: 0;
@@ -16,13 +24,28 @@ body{
     height: 30px;
     background-color: #373737;
     padding: 5px;
+    
+    
 }
 #copyright{
     color: #F4F4F4;
 }
 
-.carousel{
-   
+.jumbotron{
+    background-color: transparent !important;
 }
-    
 
+a:hover{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+
+a:visited{
+    color: black !important;
+}
+
+.abouttext{
+    float: left;
+    padding-bottom: 20px;
+}

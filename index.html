@@ -26,8 +26,8 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                         <li class=""><a href="portfolio.html"><span class="glyphicon glyphicon-camera"></span> Portfolio</a></li>  
-                        <li class=""><a class="" href="#about"><span class="glyphicon glyphicon-user"></span> Om</a></li>
-                        <li><a class="page-scroll" href="#test"><span class="glyphicon glyphicon-envelope"></span> Kontakta</a></li>
+                        <li class=""><a class="smoothScroll" href="#about"><span class="glyphicon glyphicon-user"></span> Om</a></li>
+                        <li><a class="smoothScroll" href="#kontakta"><span class="glyphicon glyphicon-envelope"></span> Kontakta</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,42 +69,68 @@
 
 
 
-        <div class="container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12" id="kontakta">
+        <div class="container-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12" id="kontakta">
             <div class="jumbotron ">
-                <h1>Kontakta</h1>
+                <h1>Kontakta mig!</h1>
                 <div class="row">
-                    <form action="" method="">
-                        <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email"/>
+                    <form action="https://formspree.io/portfoliolinus@mail.com" method="POST">
+                        <div class="form-group col-lg-6 col-sm-12 col-xs-12">
+                            <label for="email">Din mail *</label>
+                            <input type="email" name="email" class="form-control" id="email"/>
                         </div>
-                        <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                            <label for="Namn">Namn</label>
-                            <input type="text" class="form-control" id="text"/>
+                        <div class="form-group col-lg-6 col-sm-12 col-xs-12">
+                            <label for="Namn">Ditt namn *</label>
+                            <input type="text" name="namn" class="form-control" id="text"/>
                         </div>
-                        <div class="form-group col-lg-6 col-md-5 col-sm-5 col-xs-12">
-                            <label for="Meddelande">Meddelande</label>
-                            <textarea class="form-control" rows="5" id="meddelande"></textarea>
+                        <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <label for="Meddelande">Ditt meddelande *</label>
+                            <textarea class="form-control" name="meddelande" rows="5" id="meddelande"></textarea>
                         </div>
-                        <div class="form-group col-lg-1 col-md-2 col-sm-2 col-xs-4">
-                            <label for="Submit">Submit</label>
+                        <div class="form-group col-lg-3 col-md-4 col-sm-5 col-xs-8">
+                            <label for="Submit"></label>
                             <input type="submit" class="form-control" id="submit"/>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+        
+        <div class="container-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12" id="medier">
+            <div class="jumbotron">
+                <h1>Sociala medier!</h1>
+                <div class="row">
+                    <div col-md-12>
+                        <a href="https://www.instagram.com/"><img class="imghover" alt="instagram" src="img/blandat/instagram.png" <p> Följ gärna mig på Instagram!</p><img/></a>
+                    </div>
+                    
+                    <div col-md-12>
+                        <a href="https://twitter.com/"><img class="imghover" alt="instagram" src="img/blandat/twitter.png" <p> Besök min Twitter!</p><img/></a>
+                    </div
+                    
+                    <div col-md-12>
+                        <img class="imghover" alt="mail" src="img/blandat/mail.png" <p>Exempel@gmail.com</p><img/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid col-lg-12" id="about">
+            <div class="jumbotron">
+                <p class="abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec eros leo. Nulla facilisi. Donec hendrerit a ipsum ut mattis. Aliquam id felis eu nunc aliquam egestas. Integer ornare eget lorem eget viverra. Praesent vel massa lacinia, varius ante sit amet, auctor enim. Etiam ornare nibh nec arcu condimentum pretium vel ac risus. Nunc feugiat lorem nisl, sed sodales ante tincidunt rhoncus. Phasellus et tellus facilisis, egestas lectus et, tincidunt nibh. Etiam tempor tristique eros, commodo tincidunt libero viverra tristique. Nulla id ante hendrerit, tincidunt libero et, gravida lectus.</p>
+            </div>
+        </div>
+        
 
 
         <div class="footer">
             <p class="text-center" id="copyright">Copyright &copy; Josefine Göransson</p>
         </div>
+        
 
 
-
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/scrolling-nav.js"></script>
+        
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/smoothscroll.js" type="text/javascript"></script>
     </body>
 </html>
