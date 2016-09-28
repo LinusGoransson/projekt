@@ -1,14 +1,12 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
     <head>
         <title>Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"></link>
-        <link rel="stylesheet" type="text/css" href="css/style.css"></link>
-        <link rel="stylesheet" type="text/css" href="css/scrolling-nav.css"></link>
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/> <!-- länkar bootstrap css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/> <!-- länkar  style.css-->
     </head>
     <body>
-
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container-fluid">
                 <!-- Meny vid användning av hemsidan i mobilen -->
@@ -16,7 +14,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#content-nav">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> <!-- de tre strecken som syns på navbaren i mobil versionen -->
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html">Josefine Göransson</a>
@@ -24,7 +22,7 @@
                 <!-- Home, portfolio, info, kontakta -->
                 <div class="collapse navbar-collapse" id="content-nav">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li> <!-- Home visas som aktiv, länkar till index.html och har en home icon-->
                         <li class=""><a href="portfolio.html"><span class="glyphicon glyphicon-camera"></span> Portfolio</a></li>  
                         <li class=""><a class="smoothScroll" href="#about"><span class="glyphicon glyphicon-user"></span> Om</a></li>
                         <li><a class="smoothScroll" href="#kontakta"><span class="glyphicon glyphicon-envelope"></span> Kontakta</a></li>
@@ -35,20 +33,20 @@
 
         <div class="container-fluid ">
             <div class="row">
-                <img src="img/blandat/nylogga2.png" class="center-block"/>     
+                <img src="img/blandat/nylogga2.png" class="center-block"/> <!-- Logga med classen center-block som får den i mitten-->    
             </div>    
         </div>
 
 
-        <div id="myCarousel" class="carousel">
+        <div id="myCarousel" class="carousel"> <!-- carousel som fungerar som ett bildspel, classen carousel är från bootstrap och själv satt jag ett id myCarousel så jag kan ge den egen css i min style.css-->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li> <!-- den bilden som kommer först i carouselen-->
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner"> <!-- länkar från bootstrap css och är den inre delen av carouselen med bilderna-->
                 <div class="item active">
-                    <img src="img/blandat/carousel1.png" alt="carousel1" class="img-responsive"/>
+                    <img src="img/blandat/carousel1.png" alt="carousel1" class="img-responsive"/> <!-- alt= ifall bilden inte laddar korrekt och img-responsive är så att bilden ska anpassa sig till sidan-->
                 </div>
                 <div class="item">
                     <img src="img/blandat/carousel2.png" alt="carousel2" class="img-responsive"/>
@@ -57,7 +55,7 @@
                     <img src="img/blandat/carousel3.png" alt="carousel3" class="img-responsive"/>
                 </div>
             </div>
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev"> <!-- Knappen till vänster på carouselen -->
                 <span class="icon-prev"></span>
             </a>
 
@@ -69,14 +67,14 @@
 
 
 
-        <div class="container-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12" id="kontakta">
+        <div class="container-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12" id="kontakta"> <!-- en container som sträcker sig endan ut i kanterna och tar halva skärmen till dess att fönstret blir litet då den tar hela-->
             <div class="jumbotron ">
-                <h1>Kontakta mig!</h1>
+                <h1>Kontakta mig!</h1> <!-- en rubrik -->
                 <div class="row">
                     <form action="https://formspree.io/portfoliolinus@mail.com" method="POST">
-                        <div class="form-group col-lg-6 col-sm-12 col-xs-12">
+                        <div class="form-group col-lg-6 col-sm-12 col-xs-12"> <!-- anpassar hur mycket plats den ska ta beroende av förnstrets storlek-->
                             <label for="email">Din mail *</label>
-                            <input type="email" name="email" class="form-control" id="email"/>
+                            <input type="email" name="email" class="form-control" id="email"/> <!-- ruta där man kan skriva in sin email-->
                         </div>
                         <div class="form-group col-lg-6 col-sm-12 col-xs-12">
                             <label for="Namn">Ditt namn *</label>
@@ -88,54 +86,55 @@
                         </div>
                         <div class="form-group col-lg-3 col-md-4 col-sm-5 col-xs-8">
                             <label for="Submit"></label>
-                            <input type="submit" class="form-control" id="submit"/>
+                            <input type="submit" class="form-control btn btn-default" id="submit"/>
                         </div>
                     </form>
-                    <div oloand="randomNumber();"class="form-group col-lg-12">
-                           
-                                <button onclick="randomNumber()">Verifiera!</button>  
-                                <p id="nummer1"></p><p>+</p><p id="nummer2"></p>
-                                <input type="text" name="svar" id="svar"/>
+                    <div class="form-group col-lg-12"> <!-- ej klar-->
+               
+                        <button class="btn btn-default" onclick="randomNumber()">Verifiera!</button> <!-- en knapp som kallar på funnctionen randomNumber i javascriptet randomnumber.js-->
+                                <p id="nummer1"></p><p>+</p><p id="nummer2"></p> <!-- skriver ut variabeln nummer 1 och 2 inne i diven-->
+                                <input type="text" name="svar" id="svar"/> <!-- en ruta där man ska sriva in svaret-->
                         </div>
                 </div>
             </div>
         </div>
         
-        <div class="container-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12" id="medier">
+        <div class="container-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="jumbotron">
                 <h1>Sociala medier!</h1>
                 <div class="row">
                     <div col-md-12>
-                        <a href="https://www.instagram.com/"><img class="imghover" alt="instagram" src="img/blandat/instagram.png" <p> Följ gärna mig på Instagram!</p><img/></a>
+                        <a href="https://www.instagram.com/"><img class="imghover" alt="instagram" src="img/blandat/instagram.png" <p> Följ gärna mig på Instagram!</p></img></a> <!-- bild och text som länkar till instagram-->
                     </div>
                     
                     <div col-md-12>
-                        <a href="https://twitter.com/"><img class="imghover" alt="instagram" src="img/blandat/twitter.png" <p> Besök min Twitter!</p><img/></a>
+                        <a href="https://twitter.com/"><img class="imghover" alt="instagram" src="img/blandat/twitter.png" <p> Besök min Twitter!</p></img></a>
                     </div
                     
                     <div col-md-12>
-                        <img class="imghover" alt="mail" src="img/blandat/mail.png" <p>Exempel@gmail.com</p><img/>
+                        <img class="imghover" alt="mail" src="img/blandat/mail.png" <p>Exempel@gmail.com</p></img>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="container-fluid col-lg-12" id="about">
+        <div class="container-fluid col-lg-12" id="about"> <!-- om mig delen på sidan som endast är en rubrik med text-->
             <div class="jumbotron">
+                <h1>Om mig!</h1>
                 <p class="abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec eros leo. Nulla facilisi. Donec hendrerit a ipsum ut mattis. Aliquam id felis eu nunc aliquam egestas. Integer ornare eget lorem eget viverra. Praesent vel massa lacinia, varius ante sit amet, auctor enim. Etiam ornare nibh nec arcu condimentum pretium vel ac risus. Nunc feugiat lorem nisl, sed sodales ante tincidunt rhoncus. Phasellus et tellus facilisis, egestas lectus et, tincidunt nibh. Etiam tempor tristique eros, commodo tincidunt libero viverra tristique. Nulla id ante hendrerit, tincidunt libero et, gravida lectus.</p>
             </div>
         </div>
         
 
-
+        <!-- footern är den som är längst ner på sidan och är fixed så den följer alltid med-->
         <div class="footer">
-            <p class="text-center" id="copyright">Copyright &copy; Josefine Göransson</p>
+            <p class="text-center" id="copyright">Copyright &copy; Josefine Göransson</p> <!-- copyright symbol och text-->
         </div>
         
 
 
-        
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- länkar alla script-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script> 
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="js/smoothscroll.js" type="text/javascript"></script>
         <script src="js/randomnumber.js" type="text/javascript"></script>

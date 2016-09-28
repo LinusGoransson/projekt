@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel ="stylesheet" type="text/css" href="css/lightbox.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel ="stylesheet" type="text/css" href="css/lightbox.css"/>
     </head>
     <body>
 
@@ -17,7 +17,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#content-nav">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> <!-- de tre strecken som syns på navbaren i mobil versionen -->
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html">Josefine Göransson</a>
@@ -25,8 +25,8 @@
                 <!-- Natur, Landskap flikar -->
                 <div class="collapse navbar-collapse" id="content-nav">
                     <ul class="nav navbar-nav">
-                        <li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-                        <li class="active"><a href="portfolio.html"><span class="glyphicon glyphicon-camera"></span> Portfolio</a></li>
+                        <li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li> 
+                        <li class="active"><a href="portfolio.html"><span class="glyphicon glyphicon-camera"></span> Portfolio</a></li> <!-- Portfolio visas som aktiv, länkar till index.html och har en home icon-->
                         <li class=""><a class="smoothScroll" href="index.html/#about"><span class="glyphicon glyphicon-user"></span> Om</a></li>
                         <li class=""><a href="#"><span class="glyphicon glyphicon-envelope"></span> Kontakta</a></li>
                     </ul>
@@ -36,10 +36,10 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
-                    <div class="thumbnail">
-                        <a href="img/bildergallery/bild1.png" data-lightbox="bilder">
-                            <img alt="bild1" src="img/thumbnail/rsz_bild1.png">
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6"> <!-- Hur bildernas storlek kommer anpassas beroende på fönstrets storlek-->
+                    <div class="thumbnail"> <!-- Ger ett thumbnail utseende med kanter och hover effekt som jag har lagt till i style.css-->
+                        <a href="img/bildergallery/bild1.png" data-lightbox="bilder"> <!-- stora versionen av bilden som visas när man klickar in på den, data-lightbox="bilder" gör så att alla med denna atributen kommer visas i samma bildspel/bildvisning-->
+                            <img alt="bild1" src="img/thumbnail/rsz_bild1.png"> <!-- thumbnail bilden-->
                         </a>
                     </div>
                 </div>
@@ -334,7 +334,7 @@
             <p class="text-center" id="copyright">Copyright &copy; Josefine Göransson</p>
         </div>
 
-
+        <!-- länkar alla script-->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="js/lightbox.js"></script>
